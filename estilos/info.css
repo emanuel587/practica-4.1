@@ -1,0 +1,31 @@
+/* Estilos para la sección #info */
+#info {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el contenedor de elementos en la sección #info */
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para las imágenes de las mascotas en la sección #info */
+.info-mascota img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid white;
+    margin: 5px;
+    object-fit: cover; /* Ajustar las imágenes al contenedor sin deformarlas */
+}
+
+/* Estilos para los títulos h2 en la sección #info */
+#info h2 {
+    margin: 20px 0; /* Modificamos el margen para centrar horizontalmente */
+    font-size: 30px;
+    font-weight: bold;
+}

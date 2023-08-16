@@ -1,0 +1,55 @@
+/* Estilos para el contenedor de artículos en la sección #blog */
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar los elementos verticalmente */
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio entre los artículos */
+    margin-top: 30px; /* Margen superior para separar del header */
+}
+
+/* Estilos para las imágenes dentro de los artículos en la sección #blog */
+#blog img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover; /* Ajustar las imágenes al contenedor sin deformarlas */
+    border-radius: 8px; /* Agregar bordes redondeados a las imágenes */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para las imágenes */
+}
+
+/* Estilos para los artículos en la sección #blog */
+#blog article {
+    margin: 15px;
+    text-align: center; /* Centrar el contenido de los artículos */
+}
+
+/* Estilos para los títulos h3 y h4 en la sección #blog */
+#blog h3, #blog h4 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #000000; /* Color del texto más oscuro para mayor legibilidad */
+    text-align: center;
+}
+
+/* Estilos para el texto de bienvenida en la sección #Bienvenido */
+#Bienvenido {
+    text-align: center;
+    align-items: center; /* Centrar los elementos verticalmente */
+    margin-top: 30px; /* Margen superior para separar del header */
+}
+
+/* Estilos para el texto de bienvenida en la sección #Bienvenido */
+#Bienvenido h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000000; /* Color del texto un poco más oscuro para mayor legibilidad */
+    text-align: center; /* Centrar el texto del h3 */
+}
+
+#Bienvenido p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Aumentar el espaciado entre líneas para mejor legibilidad */
+    color: #000000; /* Color del texto más claro para una apariencia más suave */
+}

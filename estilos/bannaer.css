@@ -1,0 +1,108 @@
+/* Estilos para el carrusel */
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    max-height: 1600px; /* Ajusta la altura máxima del carrusel según tus necesidades */
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Estilos para la sección del banner */
+#banner {
+    position: relative;
+    margin-top: 50px; /* Ajusta este valor según el espacio que desees entre el banner y el menú */
+    text-align: center;
+    color: #fff;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* Ajusta este valor según el tamaño máximo que desees para la imagen */
+    /* Cambiamos max-height a 90vh para hacer más grande la imagen hacia abajo */
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner h2 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#banner p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#banner a:hover {
+    background-color: #0056b3;
+}
+
+/* Resto de estilos del carrusel y botón "Leer más" permanecen sin cambios */
+
+
+/* Estilos para el botón "Leer más" dentro del carrusel */
+.carrusel-leer-mas {
+    position: absolute;
+    top: 50%; /* Colocar el contenedor del botón en el centro vertical del carrusel */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar el contenedor horizontalmente */
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo del contenedor del botón */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent !important; /* Fondo completamente transparente */
+    color: #fff;
+    padding: 10px 20px; /* Reducimos el padding para hacer el botón más pequeño */
+    margin-top: 30px; /* Ajusta el margen superior para desplazar el botón hacia abajo */
+    /* Agregamos un borde negro de 2px */
+}
+
+.carrusel-leer-mas h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.carrusel-leer-mas p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.carrusel-leer-mas a {
+    display: inline-block;
+    background-color: transparent !important; /* Fondo completamente transparente */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #000; /* Agregamos un borde negro de 1px al botón */
+    padding: 8px 16px; /* Reducimos el padding para hacer el botón más pequeño */
+    margin-top: 15px;
+}
+
+.carrusel-leer-mas a:hover {
+    background-color: transparent !important; /* Fondo completamente transparente */
+    color: #0056b3;
+}

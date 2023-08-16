@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos/ti.css">
+    <link rel="stylesheet" type="text/css" href="estilos/menu.css">
+    <link rel="stylesheet" type="text/css" href="estilos/principal.css">
+    <link rel="stylesheet" type="text/css" href="estilos/bannaer.css">
+    <link rel="stylesheet" type="text/css" href="estilos/blog.css">
+    <link rel="stylesheet" type="text/css" href="estilos/info.css">
+    <link rel="stylesheet" type="text/css" href="estilos/fotter.css">
+
+    <title>Deportes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <!--sirve para ajustar a todos los dispositivos -->
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor ">
+            <h1 class="icon-etsy">Deportes</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a  href="contacto.html">Contacto</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="inicia sesion.html">Inicia sesion</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <!-- El carrusel tendrá una clase para facilitar la manipulación con JavaScript -->
+            <div class="carrusel">
+                <img src="imagenes/erling-haaland-borussia-dortmund-.jpg" class="slide" alt="">
+                <img src="imagenes/cr7.jpg" class="slide" alt="">
+                <img src="imagenes/thumb-1920-1138444.jpg" class="slide" alt="">
+               
+                <div class="carrusel-leer-mas">
+                <a href="#info">Leer más</a>
+            </div>
+        </section>
+        <section id="Bienvenido">
+            <div class="contenedor ">
+                <h3>Bienvenido a nuestro blog sobre el androide haland</h3>
+                <h6></h6>
+                <p>Erling Haaland no se detiene. Suma y sigue. Cada partido que pasa, cada encuentro que juega, el
+                    delantero noruego del Manchester City lo utiliza como una oportunidad para engordar sus increíbles
+                    estadísticas en el fútbol</p>
+            </div>
+        </section>
+        <section id="blog">
+            <h3>Lo ultimo de Haaland</h3>
+            <div class="contenedor">
+                <article>
+                    <img src="imagenes/haland.jfif" alt="">
+                    <h4>Haland borussia</h4>
+                </article>
+
+                <article>
+                    <img src="imagenes/haland terminator.jfif" alt="">
+                    <h4>Haland terminator</h4>
+                </article>
+
+                <article>
+                    <img src="imagenes/robot.jfif" alt="">
+                    <h4>Haaland Robot</h4>
+                </article>
+
+            </div>
+
+        </section>
+        <section id="info">
+            <h2>Sabias que</h2>
+            <h3>con </h3>
+            <div class="contenedor">
+                <div class="info-mascota">
+                    <img src="imagenes/haland terminator.jfif">
+                    <h4>el androide Haaland</h4>
+                </div>
+                <div class="info-mascota">
+                    <img src="imagenes/haland.jfif">
+                    <h4>el androide Haaland</h4>
+                </div>
+
+                <div class="info-mascota">
+                    <img src="imagenes/robot.jfif">
+                    <h4>el androide Haaland</h4>
+                </div>
+                <div class="info-mascota">
+                    <img src="imagenes/haland terminator.jfif">
+                    <h4>el androide Haaland</h4>
+
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="pie" contenedor>
+            <p>copyright emmanuel </p>
+            <div class="sociales">
+                <a href=" https://www.instagram.com/" class="icon-instagram"></a>
+                <a href=" https://www.favebook.com/ " class="icon-facebook-"></a>
+                <a href=" https://www.twitter.com/ " class="icon-twitter"></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script>
+        // JavaScript para el carrusel
+        const carrusel = document.querySelector(".carrusel");
+        const slides = carrusel.querySelectorAll(".slide");
+        let slideIndex = 0;
+    
+        function mostrarSlide() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(mostrarSlide, 3000); // Cambiar de imagen cada 3 segundos (3000 milisegundos)
+        }
+    
+        mostrarSlide(); // Iniciar el carrusel
+    </script>
+</body>
+
+</html>
